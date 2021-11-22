@@ -1,12 +1,12 @@
-.team {
+.section-team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--third-background-color);
 }
 
-.team__list {
+.team {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrapp: wrapp;
   margin-left: -30px;
 }
 
@@ -19,12 +19,12 @@
   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.team__box {
+.team-card__box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team__title {
+.team-card__title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -32,7 +32,7 @@
   margin-bottom: 10px;
 }
 
-.team__text {
+.team-card__text {
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 16px;

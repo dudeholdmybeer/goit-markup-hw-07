@@ -21,8 +21,9 @@
   <body>
     <header>
       <div class="container header">
-        <a class="logo" href="./index.html" lang="en">
-          <span class="logo--blue">Web</span><span class="logo--black">Studio</span>
+        <a class="logo header__logo" href="./index.html" lang="en">
+          <span class="logo__text logo__text--blue">Web</span
+          ><span class="logo__text logo__text--black">Studio</span>
         </a>
         <nav>
           <ul class="site-nav">
@@ -30,10 +31,16 @@
               <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link current" href="./portfolio.html">Портфолио</a>
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              <a
+                class="site-nav__link"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 >Контакты</a
               >
             </li>
@@ -61,169 +68,220 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section-portfolio">
         <div class="container">
-          <h1 class="portfolio-title visually-hidden">Портфолио</h1>
-          <ul class="portfolio-filter">
-            <li class="portfolio-filter-item">
-              <button type="button" class="portfolio-filter-button">Все</button>
+          <h1 class="section__title visually-hidden">Портфолио</h1>
+          <ul class="filter">
+            <li class="filter__item">
+              <button type="button" class="filter__button">Все</button>
             </li>
-            <li class="portfolio-filter-item">
-              <button type="button" class="portfolio-filter-button">Веб-сайты</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
             </li>
-            <li class="portfolio-filter-item">
-              <button type="button" class="portfolio-filter-button">Приложения</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
             </li>
-            <li class="portfolio-filter-item">
-              <button type="button" class="portfolio-filter-button">Дизайн</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
-            <li class="portfolio-filter-item">
-              <button type="button" class="portfolio-filter-button">Маркетинг</button>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
           <ul class="portfolio">
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-item-wrap">
-                  <img src="./img/portfolio-img-1.jpg" alt="Технокряк" width="370" />
-                  <p class="portfolio-item-wrap-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas atque
-                    pariatur minima sapiente cumque sequi
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio-card">
+                  <img
+                    class="portfolio-card__image"
+                    src="./img/portfolio-img-1.jpg"
+                    alt="Технокряк"
+                    width="370"
+                  />
+                  <p class="portfolio-card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil quas atque pariatur minima sapiente cumque sequi
                   </p>
                 </div>
-                <div class="portfolio-box">
-                  <h2 class="portfolio-title">Технокряк</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="portfolio-card__box">
+                  <h2 class="portfolio-card__title">Технокряк</h2>
+                  <p class="portfolio-card__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-item-wrap">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio-card">
                   <img
+                    class="portfolio-card__image"
                     src="./img/portfolio-img-2.jpg"
                     alt="Постер New Orlean vs Golden Star"
                     width="370"
                   />
-                  <p class="portfolio-item-wrap-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas atque
-                    pariatur minima sapiente cumque sequi
+                  <p class="portfolio-card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil quas atque pariatur minima sapiente cumque sequi
                   </p>
                 </div>
-                <div class="portfolio-box">
-                  <h2 class="portfolio-title">
+                <div class="portfolio-card__box">
+                  <h2 class="portfolio-card__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="portfolio-text">Дизайн</p>
+                  <p class="portfolio-card__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-item-wrap">
-                  <img src="./img/portfolio-img-3.jpg" alt="Ресторан Seafood" width="370" />
-                  <p class="portfolio-item-wrap-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas atque
-                    pariatur minima sapiente cumque sequi
-                  </p>
-                </div>
-                <div class="portfolio-box">
-                  <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="portfolio-text">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-item-wrap">
-                  <img src="./img/portfolio-img-4.jpg" alt="Проект Prime" width="370" />
-                  <p class="portfolio-item-wrap-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas atque
-                    pariatur minima sapiente cumque sequi
-                  </p>
-                </div>
-                <div class="portfolio-box">
-                  <h2 class="portfolio-title">Проект <span lang="en">Prime</span></h2>
-                  <p class="portfolio-text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-item-wrap">
-                  <img src="./img/portfolio-img-5.jpg" alt="Проект Boxes" width="370" />
-                  <p class="portfolio-item-wrap-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas atque
-                    pariatur minima sapiente cumque sequi
-                  </p>
-                </div>
-                <div class="portfolio-box">
-                  <h2 class="portfolio-title">Проект <span lang="en">Boxes</span></h2>
-                  <p class="portfolio-text">Приложение</p>
-                </div>
-              </a>
-            </li>
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-item-wrap">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio-card">
                   <img
+                    class="portfolio-card__image"
+                    src="./img/portfolio-img-3.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                  />
+                  <p class="portfolio-card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil quas atque pariatur minima sapiente cumque sequi
+                  </p>
+                </div>
+                <div class="portfolio-card__box">
+                  <h2 class="portfolio-card__title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="portfolio-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio-card">
+                  <img
+                    class="portfolio-card__image"
+                    src="./img/portfolio-img-4.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                  />
+                  <p class="portfolio-card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil quas atque pariatur minima sapiente cumque sequi
+                  </p>
+                </div>
+                <div class="portfolio-card__box">
+                  <h2 class="portfolio-card__title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="portfolio-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio-card">
+                  <img
+                    class="portfolio-card__image"
+                    src="./img/portfolio-img-5.jpg"
+                    alt="Проект Boxes"
+                    width="370"
+                  />
+                  <p class="portfolio-card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil quas atque pariatur minima sapiente cumque sequi
+                  </p>
+                </div>
+                <div class="portfolio-card__box">
+                  <h2 class="portfolio-card__title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="portfolio-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio-card">
+                  <img
+                    class="portfolio-card__image"
                     src="./img/portfolio-img-6.jpg"
                     alt="Inspiration has no Borders"
                     width="370"
                   />
-                  <p class="portfolio-item-wrap-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas atque
-                    pariatur minima sapiente cumque sequi
+                  <p class="portfolio-card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil quas atque pariatur minima sapiente cumque sequi
                   </p>
                 </div>
-                <div class="portfolio-box">
-                  <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="portfolio-card__box">
+                  <h2 class="portfolio-card__title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-card__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-item-wrap">
-                  <img src="./img/portfolio-img-7.jpg" alt="Издание Limited Edition" width="370" />
-                  <p class="portfolio-item-wrap-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas atque
-                    pariatur minima sapiente cumque sequi
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio-card">
+                  <img
+                    class="portfolio-card__image"
+                    src="./img/portfolio-img-7.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                  />
+                  <p class="portfolio-card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil quas atque pariatur minima sapiente cumque sequi
                   </p>
                 </div>
-                <div class="portfolio-box">
-                  <h2 class="portfolio-title">Издание <span lang="en">Limited Edition</span></h2>
-                  <p class="portfolio-text">Дизайн</p>
+                <div class="portfolio-card__box">
+                  <h2 class="portfolio-card__title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="portfolio-card__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-item-wrap">
-                  <img src="./img/portfolio-img-8.jpg" alt="Проект LAB" width="370" />
-                  <p class="portfolio-item-wrap-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas atque
-                    pariatur minima sapiente cumque sequi
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio-card">
+                  <img
+                    class="portfolio-card__image"
+                    src="./img/portfolio-img-8.jpg"
+                    alt="Проект LAB"
+                    width="370"
+                  />
+                  <p class="portfolio-card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil quas atque pariatur minima sapiente cumque sequi
                   </p>
                 </div>
-                <div class="portfolio-box">
-                  <h2 class="portfolio-title">Проект <span lang="en">LAB</span></h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                <div class="portfolio-card__box">
+                  <h2 class="portfolio-card__title">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="portfolio-card__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-item-wrap">
-                  <img src="./img/portfolio-img-9.jpg" alt="Growing Business" width="370" />
-                  <p class="portfolio-item-wrap-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas atque
-                    pariatur minima sapiente cumque sequi
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio-card">
+                  <img
+                    class="portfolio-card__image"
+                    src="./img/portfolio-img-9.jpg"
+                    alt="Growing Business"
+                    width="370"
+                  />
+                  <p class="portfolio-card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil quas atque pariatur minima sapiente cumque sequi
                   </p>
                 </div>
-                <div class="portfolio-box">
-                  <h2 class="portfolio-title" lang="en">Growing Business</h2>
-                  <p class="portfolio-text">Приложение</p>
+                <div class="portfolio-card__box">
+                  <h2 class="portfolio-card__title" lang="en">
+                    Growing Business
+                  </h2>
+                  <p class="portfolio-card__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -234,59 +292,80 @@
 
     <footer>
       <div class="container footer">
-        <div class="address">
-          <a href="./index.html" lang="en" class="logo logo--footer">
-            <span class="logo--blue">Web</span><span class="logo--white">Studio</span>
+        <div class="footer-address-wrapp">
+          <a href="./index.html" lang="en" class="logo footer__logo">
+            <span class="logo__text logo__text--blue">Web</span
+            ><span class="logo__text logo__text--white">Studio</span>
           </a>
           <address>
-            <ul class="address__list">
+            <ul class="address">
               <li class="address__item">
                 <a
                   href="https://goo.gl/maps/3iyzEZUhEdgraJMp6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="address__item--white"
+                  class="address__link address__link--white"
                 >
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
               <li class="address__item">
-                <a href="mailto:info@example.com" class="address__item--gray">info@example.com</a>
+                <a
+                  href="mailto:info@example.com"
+                  class="address__link address__link--gray"
+                  >info@example.com</a
+                >
               </li>
               <li class="address__item">
-                <a href="tel:+380961111111" class="address__item--gray">+38 096 111 11 11</a>
+                <a
+                  href="tel:+380961111111"
+                  class="address__link address__link--gray"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
 
-        <div class="footer-social">
-          <h3 class="footer__header-text">Присоединяйтесь</h3>
+        <div class="footer-social-wrapp">
+          <h3 class="footer__title">Присоединяйтесь</h3>
           <ul class="social">
             <li class="social__item">
-              <a href="https://www.instagram.com/" class="social__link social__link--footer">
-                <svg class="social__icon--footer" width="20" height="20">
+              <a
+                href="https://www.instagram.com/"
+                class="social__link social__link--dark"
+              >
+                <svg class="social__icon--white" width="20" height="20">
                   <use href="./img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="https://twitter.com/" class="social__link social__link--footer">
-                <svg class="social__icon--footer" width="20" height="20">
+              <a
+                href="https://twitter.com/"
+                class="social__link social__link--dark"
+              >
+                <svg class="social__icon--white" width="20" height="20">
                   <use href="./img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="https://www.facebook.com/" class="social__link social__link--footer">
-                <svg class="social__icon--footer" width="20" height="20">
+              <a
+                href="https://www.facebook.com/"
+                class="social__link social__link--dark"
+              >
+                <svg class="social__icon--white" width="20" height="20">
                   <use href="./img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="https://www.linkedin.com/" class="social__link social__link--footer">
-                <svg class="social__icon--footer" width="20" height="20">
+              <a
+                href="https://www.linkedin.com/"
+                class="social__link social__link--dark"
+              >
+                <svg class="social__icon--white" width="20" height="20">
                   <use href="./img/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -294,9 +373,9 @@
           </ul>
         </div>
 
-        <div class="footer-form-wrap">
+        <div class="footer-form-wrapp">
           <form class="footer-form" action="#">
-            <h3 class="footer__header-text">Подпишитесь на рассылку</h3>
+            <h3 class="footer__title">Подпишитесь на рассылку</h3>
             <label class="footer-form__field">
               <input
                 type="email"

@@ -1,18 +1,9 @@
-.features {
+.section-features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.features__title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.15;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.features__list {
+.features {
   display: flex;
 }
 
@@ -22,7 +13,7 @@
   }
 }
 
-.features__box {
+.features-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,12 +23,21 @@
   margin-bottom: 30px;
 }
 
-.features__icon {
+.features-card__icon {
   height: 70px;
   width: 70px;
 }
 
-.features__text {
+.features-card__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.features-card__text {
   font-size: 14px;
   line-height: 1.7;
   font-weight: 400;

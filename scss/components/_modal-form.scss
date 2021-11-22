@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.modal-form__head {
+.modal-form__title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.17;
@@ -23,7 +23,7 @@
   }
 }
 
-.modal-form__wrapper {
+.modal-form__wrappp {
   position: relative;
   display: block;
   margin-top: 4px;
@@ -108,7 +108,7 @@
   }
 }
 
-.accept-policy-link {
+.accept-policy {
   text-decoration: underline;
   color: var(--accent-color);
 }

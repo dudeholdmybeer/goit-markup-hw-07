@@ -1,11 +1,11 @@
-.about {
+.section-about {
   padding-top: 0;
   padding-bottom: 94px;
 }
 
-.about__list {
+.about {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrapp: wrapp;
   margin-left: -30px;
 }
 
@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.about__box {
+.about-card__box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
   left: 0;
 }
 
-.about__text {
+.about-card__text {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 14px;
