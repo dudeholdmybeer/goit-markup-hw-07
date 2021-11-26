@@ -19,17 +19,19 @@
   }
 }
 
-.button--hero {
+// Миксы для кнопок
+
+.hero__button {
   padding: 10px 32px;
 }
 
-.button--footer-form {
+.footer-form__button {
   align-items: center;
   text-align: left;
   padding: 10px 29px;
 }
 
-.button--modal-form {
+.modal-form__button {
   align-self: center;
   padding: 10px 55px;
 }
